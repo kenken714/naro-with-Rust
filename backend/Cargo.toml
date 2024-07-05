@@ -1,0 +1,15 @@
+[package]
+name = "naro-with-Rust"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+macros = ["axum/macros"]
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+axum = "0.7.5"
+mini-redis = "0.4"
+serde = { version = "1.0.203", features = ["derive"] }
+serde_json = "1.0.117"
+
